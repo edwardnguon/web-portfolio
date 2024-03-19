@@ -1,4 +1,4 @@
-# React + Vite
+# web-portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+My web portfolio made using ReactJS and Sass
 
