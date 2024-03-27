@@ -3,13 +3,13 @@ import Header from "./components/header/Header";
 
 const App = () => {
   return <div>
-    <section><Header /></section>
+    <section id="Home"><Header /></section>
     <section>Hero</section>
-    <section>Parallax</section>
+    <section id="About Me">Parallax</section>
     <section>About Me</section>
-    <section>Parallax</section>
+    <section id="Portfolio">Parallax</section>
     <section>Portfolio</section>
-    <section>Contact</section>
+    <section id="Contact">Contact</section>
   </div>;
 };
 
