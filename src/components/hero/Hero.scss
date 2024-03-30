@@ -1,0 +1,25 @@
+.hero {
+    height: calc(100vh - 100px);
+    overflow: hidden;
+    background: linear-gradient(180deg, #1a141e, #000000);
+    position: relative;
+
+    .textContainer {
+        position: absolute;
+        text-align: center;
+        transform: translate(-50%, -50%);
+        top: 40%;
+        left: 50%;
+        font-size: 90px;
+        letter-spacing: 8px;
+        line-height: 140%;
+        display: inline-block;
+    }
+
+    .imageContainer {
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+}

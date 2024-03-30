@@ -3,7 +3,7 @@ import React from 'react'
 const Links = () => {
   const items = [
     "Home",
-    "About Me",
+    "About",
     "Portfolio",
     "Contact",
   ]

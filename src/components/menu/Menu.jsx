@@ -24,6 +24,7 @@ const Menu = () => {
         type: "spring",
         stiffness: 400,
         damping: 40,
+        delay: 0.2,
       }
     }
   }

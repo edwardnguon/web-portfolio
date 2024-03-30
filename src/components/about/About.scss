@@ -1,0 +1,25 @@
+.about {
+    height: calc(100vh );
+    overflow: hidden;
+    background: linear-gradient(180deg, #000000, #1a141e);
+    position: relative;
+
+    .textContainer {
+        position: absolute;
+        text-align: center;
+        transform: translate(-50%, -140%);
+        top: 40%;
+        left: 50%;
+        font-size: 60px;
+        letter-spacing: 8px;
+        line-height: 140%;
+        display: inline-block;
+    }
+
+    .imageContainer {
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+}
