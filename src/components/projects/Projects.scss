@@ -1,4 +1,4 @@
-.about {
+.projects {
     height: calc(100vh );
     overflow: hidden;
     background: linear-gradient(180deg, #000000, #1a141e);
@@ -21,17 +21,5 @@
         position: absolute;
         top: 0;
         right: 0;
-    }
-
-    .aboutParagraph {
-        position: absolute;
-        top: 35%;
-        left: 21%;
-        transform: translate(-50%, 0%);
-        text-align: left;
-        font-size: 30px;
-        color: #ffffff;
-        line-height: 1.6;
-        width: 60%;
     }
 }

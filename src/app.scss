@@ -18,6 +18,11 @@ body {
 section {
     height: 100vh;
     scroll-snap-align: center;
+    @for $i from 1 through 6 { // Adjust number for the total sections
+        &:nth-child(#{$i}) {
+          background-color: if($i % 2 == 0, #000000, #1a141e);
+        }
+      }
 }
 
 a {

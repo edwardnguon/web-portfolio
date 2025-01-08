@@ -1,19 +1,19 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-import './About.scss';
+import './Projects.scss';
 
-const About = () => {
+const Projects = () => {
   const defaultAnimation = {
     hidden: { opacity: 0, y: 50 },
     visible: { opacity: 1, y: 0 },
   };
 
-  const about = "About Me";
+  const projects = "My Projects";
 
   return (
     <motion.section
-      className="about"
+      className="projects"
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 0.3 }}
@@ -27,24 +27,14 @@ const About = () => {
         transition={{ staggerChildren: 0.07 }}
         className="textContainer"
       >
-        {about.split("").map((char, index) => (
+        {projects.split("").map((char, index) => (
           <motion.span key={index} variants={defaultAnimation}>
             {char}
           </motion.span>
         ))}
       </motion.span>
-      <motion.p
-        className="aboutParagraph"
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.3 }}
-        variants={defaultAnimation}
-        transition={{ duration: 1 }}
-      >
-        Based in Boston, currently studying and working towards my Bachelors Degree in Computer Science and Economics at Northeastern University. I love to solve problems with my code.
-      </motion.p>
     </motion.section>
   );
 };
 
-export default About;
+export default Projects;

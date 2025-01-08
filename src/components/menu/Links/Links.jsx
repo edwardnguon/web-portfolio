@@ -2,9 +2,9 @@ import React from 'react'
 
 const Links = () => {
   const items = [
-    "Home",
     "About",
-    "Portfolio",
+    "Skills",
+    "Projects",
     "Contact",
   ]
 
