@@ -1,37 +1,37 @@
 .about {
-    height: calc(100vh );
-    overflow: hidden;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background: linear-gradient(180deg, #000000, #1a141e);
-    position: relative;
-
-    .textContainer {
-        position: absolute;
-        text-align: center;
-        transform: translate(-50%, -140%);
-        top: 35%;
-        left: 50%;
-        font-size: 60px;
-        letter-spacing: 8px;
-        line-height: 140%;
-        display: inline-block;
-    }
+    padding: 50px;
+    color: white;
+    gap: 50px; /* Adds spacing between image and text */
 
     .imageContainer {
-        height: 100%;
-        position: absolute;
-        top: 0;
-        right: 0;
+        flex: 1; /* Makes image take equal space */
+        display: flex;
+        justify-content: center;
+    }
+
+    .imageContainer img {
+        width: 100%; /* Responsive */
+        max-width: 500px; /* Limits max size */
+        border-radius: 10px; /* Optional styling */
+    }
+
+    .textContainer {
+        flex: 1;
+        text-align: left;
+        font-size: 60px;
+        letter-spacing: 8px;
+        line-height: 180%;
     }
 
     .aboutParagraph {
-        position: absolute;
-        top: 35%;
-        left: 21%;
-        transform: translate(-50%, 0%);
-        text-align: left;
-        font-size: 30px;
-        color: #ffffff;
-        line-height: 1.6;
-        width: 60%;
+        font-size: 20px;
+        line-height: 1.5;
+        width: 100%;
     }
 }
+

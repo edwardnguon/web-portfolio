@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-
+import picture from '../../assets/picture.png';
 import './About.scss';
 
 const About = () => {
@@ -9,42 +9,55 @@ const About = () => {
     visible: { opacity: 1, y: 0 },
   };
 
-  const about = "About Me";
-
   return (
     <motion.section
       className="about"
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 0.3 }}
-      variants={defaultAnimation}
+      variants={defaultAnimation} 
       transition={{ duration: 0.8 }}
-    >
-      <motion.span
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.3 }}
-        transition={{ staggerChildren: 0.07 }}
-        className="textContainer"
-      >
-        {about.split("").map((char, index) => (
-          <motion.span key={index} variants={defaultAnimation}>
-            {char}
-          </motion.span>
-        ))}
-      </motion.span>
-      <motion.p
-        className="aboutParagraph"
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.3 }}
-        variants={defaultAnimation}
-        transition={{ duration: 1 }}
-      >
-        Based in Boston, currently studying and working towards my Bachelors Degree in Computer Science and Economics at Northeastern University. I love to solve problems with my code.
-      </motion.p>
+    > 
+      {/* Image Container */}
+      <div className="imageContainer">
+        <motion.img 
+          src={picture} 
+          alt="Profile" 
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.8 }}
+        />
+      </div>
+
+      {/* Text Container */}
+      <div className="textContainer">
+        <motion.h2 
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ staggerChildren: 0.07 }}
+        > 
+          {"About Me".split("").map((char, index) => (
+            <motion.span key={index} variants={defaultAnimation}>
+              {char}
+            </motion.span>
+          ))}
+        </motion.h2>
+        
+        <motion.p
+          className="aboutParagraph"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.3 }}
+          variants={defaultAnimation}
+          transition={{ duration: 1 }}
+        > 
+          Based in Boston, currently studying towards my Bachelor's Degree in Computer Science and Economics at Northeastern University. I love to solve problems with my code.
+        </motion.p>
+      </div>
     </motion.section>
   );
 };
 
 export default About;
+

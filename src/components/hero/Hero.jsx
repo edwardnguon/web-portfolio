@@ -13,18 +13,18 @@ const Hero = () => {
     }
   }
 
-  const aspiring = "ASPIRING"
-  const software = "SOFTWARE"
-  const engineer = "ENGINEER"
+  const aspiring = "Hello, I'm"
+  const software = "Edward Nguon"
+  const engineer = "Aspiring Software Engineer"
 
   return (
     <div className='hero'>
         <motion.span initial='hidden' animate='visible' transition={{staggerChildren: 0.07}} className='textContainer'>
             {aspiring.split("").map((char) => (<motion.span variants={defaultAnimation}>{char}</motion.span>))}
             <br />
-            {software.split("").map((char) => (<motion.span variants={defaultAnimation}>{char}</motion.span>))}
+            {software.split("").map((char) => (<motion.span className="name" variants={defaultAnimation}>{char}</motion.span>))}
             <br />
-            {engineer.split("").map((char) => (<motion.span variants={defaultAnimation}>{char}</motion.span>))}
+            {engineer.split("").map((char) => (<motion.span className="aspiring" variants={defaultAnimation}>{char}</motion.span>))}
         </motion.span>
     </div>
   )

@@ -7,13 +7,13 @@
     .textContainer {
         position: absolute;
         text-align: center;
-        transform: translate(-50%, -50%);
-        top: 40%;
-        left: 50%;
         font-size: 90px;
         letter-spacing: 8px;
         line-height: 140%;
         display: inline-block;
+        width: 50%;
+        transform: translate(50%, 20%);
+        font-weight: 600;
     }
 
     .imageContainer {
@@ -21,5 +21,8 @@
         position: absolute;
         top: 0;
         right: 0;
+    }
+    .aspiring {
+        font-size: 30px;
     }
 }
