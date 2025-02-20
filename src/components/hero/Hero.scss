@@ -3,26 +3,48 @@
     overflow: hidden;
     background: linear-gradient(180deg, #1a141e, #000000);
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; /* Stack content on smaller screens */
+    text-align: center;
+    padding: 20px;
+}
 
+.textContainer {
+    font-size: clamp(40px, 8vw, 90px); /* Responsive font size */
+    letter-spacing: 7px;
+    line-height: 140%;
+    font-weight: 600;
+    max-width: 80%;
+    transform: translateY(-20%);
+}
+
+.imageContainer {
+    width: 100%;
+    max-width: 500px; /* Adjust max width for responsiveness */
+    height: auto;
+    margin-top: 20px;
+}
+
+.aspiring {
+    font-size: clamp(16px, 3vw, 30px); /* Adjust font size responsively */
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .hero {
+        height: auto;
+        padding: 50px 20px;
+    }
+    
     .textContainer {
-        position: absolute;
-        text-align: center;
-        font-size: 90px;
-        letter-spacing: 8px;
-        line-height: 140%;
-        display: inline-block;
-        width: 50%;
-        transform: translate(50%, 20%);
-        font-weight: 600;
+        font-size: 7vw;
+        width: 100%;
     }
-
+    
     .imageContainer {
-        height: 100%;
-        position: absolute;
-        top: 0;
-        right: 0;
-    }
-    .aspiring {
-        font-size: 30px;
+        width: 80%;
     }
 }
+
