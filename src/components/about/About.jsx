@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import picture from '../../assets/picture.png';
+import picture from '/picture.png';
 import './About.scss';
 
 const About = () => {
