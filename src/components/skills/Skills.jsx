@@ -4,14 +4,14 @@ import { motion } from 'framer-motion';
 import './Skills.scss';
 
 const skillsData = [
+   { name: "TypeScript", logo: "https://cdn.jsdelivr.net/npm/simple-icons/icons/typescript.svg" },
+  { name: "React", logo: "https://cdn.jsdelivr.net/npm/simple-icons/icons/react.svg" },
+  { name: "Node", logo: "https://cdn.jsdelivr.net/npm/simple-icons/icons/nodedotjs.svg" },
   { name: "Java", logo: "https://cdn.jsdelivr.net/npm/simple-icons/icons/java.svg" },
   { name: "C", logo: "https://cdn.jsdelivr.net/npm/simple-icons/icons/c.svg" },
   { name: "Python", logo: "https://cdn.jsdelivr.net/npm/simple-icons/icons/python.svg" },
-  { name: "JavaScript", logo: "https://cdn.jsdelivr.net/npm/simple-icons/icons/javascript.svg" },
-  { name: "React", logo: "https://cdn.jsdelivr.net/npm/simple-icons/icons/react.svg" },
-  { name: "Sass", logo: "https://cdn.jsdelivr.net/npm/simple-icons/icons/sass.svg" },
-  { name: "Kotlin", logo: "https://cdn.jsdelivr.net/npm/simple-icons/icons/kotlin.svg" },
-  { name: "C++", logo: "https://cdn.jsdelivr.net/npm/simple-icons/icons/cplusplus.svg" },
+ { name: "Kotlin", logo: "https://cdn.jsdelivr.net/npm/simple-icons/icons/kotlin.svg" },
+  { name: "Tailwind", logo: "https://cdn.jsdelivr.net/npm/simple-icons/icons/tailwindcss.svg" },
   { name: "Git", logo: "https://cdn.jsdelivr.net/npm/simple-icons/icons/git.svg" },
 ];
 

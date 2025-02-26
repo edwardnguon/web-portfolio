@@ -1,7 +1,11 @@
 .about {
     height: 100vh;
+    overflow: hidden;
+    position: relative;
     display: flex;
+    flex-direction: center;
     align-items: center;
+    text-align: center;
     justify-content: center;
     background: linear-gradient(180deg, #000000, #1a141e);
     padding: 50px;
@@ -18,6 +22,7 @@
         width: 100%; /* Responsive */
         max-width: 500px; /* Limits max size */
         border-radius: 10px; /* Optional styling */
+        min-width: 100px;
     }
 
     .textContainer {
@@ -32,6 +37,27 @@
         font-size: 20px;
         line-height: 1.5;
         width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .about {
+        height: auto;
+        padding: 50px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .textContainer {
+        font-size: 7vw;
+        width: 100%;
+    }
+
+    .imageContainer {
+        width: 50%;
     }
 }
 

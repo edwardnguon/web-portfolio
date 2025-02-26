@@ -5,15 +5,24 @@ import './Projects.scss';
 
 const projectData = [
   {
+    title: 'Porter Beverage',
+    description: 'Full-Stack web applicationg made with React, Node, and MySQL',
+    link: 'http://porter-beverage.com/',
+  },
+  {
     title: 'Three Trios',
-    description: 'Java-based card game made with object oriented programming principles.',
-    link: 'https://github.com/edwardnguon/three-trios',
+    description: 'Java-based card game made with object oriented programming principles',
+    link: 'https://github.com/edwardnguon/three-trios'
   },
   {
     title: 'This Web-Portfolio',
-    description: 'Made with React components and styled with Sass css.',
+    description: 'Made with React components and styled with Sass css',
     link: 'https://github.com/edwardnguon/web-portfolio',
   },
+  {
+    title: 'Unix Shell',
+    description: 'Fully functional unix shell written in C for Linux',
+  }
 ];
 
 const Projects = () => {
@@ -68,7 +77,7 @@ const Projects = () => {
               rel="noopener noreferrer"
               className="project-link"
             >
-              View on GitHub
+              Check it out
             </a>
           </motion.div>
         ))}
