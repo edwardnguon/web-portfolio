@@ -6,7 +6,7 @@ import './Projects.scss';
 const projectData = [
   {
     title: 'Porter Beverage',
-    description: 'Full-Stack web applicationg made with React, Node, and MySQL',
+    description: 'Full-Stack web application made with React, Node, and MySQL',
     link: 'http://porter-beverage.com/',
   },
   {

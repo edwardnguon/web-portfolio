@@ -21,7 +21,7 @@ const About = () => {
       {/* Image Container */}
       <div className="imageContainer">
         <motion.img 
-          src={picture} 
+          src="https://raw.githubusercontent.com/edwardnguon/web-portfolio/main/public/picture.png" 
           alt="Profile" 
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
